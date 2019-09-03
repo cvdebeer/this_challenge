@@ -49,10 +49,12 @@ div {
 
 .card_head {
     flex: 0;
+
 }
 
 .card_para {
     flex: 1 0 auto;
+    display: none;
 }
 
 #container {
@@ -182,4 +184,8 @@ li {
 
 .buttonhover {
     background-color: black;
+}
+
+.highlight_link {
+    background-color: yellow;
 }
