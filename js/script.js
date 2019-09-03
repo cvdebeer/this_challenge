@@ -18,7 +18,7 @@ $(document).ready(function () {
     $(".stream3").removeClass("highlight_stream");
     $(".stream3").addClass("highlight_stream");
   });
-  */
+  
   //solution provided by Code Institute - not working
   $(".stream-nav").on("click", function () {
     // A selector to match all cards in all streams
@@ -47,7 +47,8 @@ $(document).ready(function () {
           $('.' + cardClass).removeClass('card-highlight');
           $('.' + className).addClass('card-highlight');
       }
-  });*/
+  });
+  */
   $("p").click(function () {
     $("p").addClass("redfont");
   });
@@ -75,17 +76,16 @@ $(document).ready(function () {
 
   $('img').click(function () {
     $(this).next().children().slideDown();
-  })
+  });
   $('.card').click(function () {
     $(this).toggleClass('card-highlight');
-  })
+  });
   /*selecting highlights challenge*/
   $('#select').click(function () {
-
-    $('.card').not('.card-highlight').hide();
-  })
+    $(".card:not(.card-highlight)").hide();
+  });
 
   $('#all').click(function () {
     $('.card').show();
-  })
+  });
 });
