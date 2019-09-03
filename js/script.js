@@ -82,7 +82,7 @@ $(document).ready(function () {
   /*selecting highlights challenge*/
   $('#select').click(function () {
 
-    $('.card').not('card-highlight').hide();
+    $('.card').not('.card-highlight').hide();
   })
 
   $('#all').click(function () {
